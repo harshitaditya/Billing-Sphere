@@ -14,3 +14,8 @@
   }
 
 
+  document.getElementById('mobile-menu').addEventListener('click',()=>{
+    document.getElementById('list').classList.toggle('active');
+  });
+
+
