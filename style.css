@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  font-size: clamp(0.875rem, 0.5rem + 0.5vw, 1rem); 
+  font-size: clamp(0.8rem, 0.5rem + 0.5vw, 1rem); 
 }
 
 #navbar {
@@ -72,7 +72,7 @@ body {
   padding: 0.5rem 1rem;
   color: black;
   font-weight: 500;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 .listnode:hover {
@@ -141,6 +141,10 @@ body {
   color: rgb(0, 76, 76);
 }
 
+.content_right h2{
+    text-align: center;
+}
+
 #div_rightlogo {
   display: flex;
   justify-content: space-around;
@@ -159,7 +163,7 @@ body {
 
 .logo_item h2 {
   margin-top: 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.3vw, 1rem); 
   color: rgb(0, 0, 128);
 }
 
@@ -213,7 +217,7 @@ body {
   background-color: rgb(0, 76, 76);
   color: white;
   padding: 0 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 #download h4:hover,
@@ -224,7 +228,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding: 1rem;
   max-width: 1200px;
@@ -261,7 +265,7 @@ body {
   padding: 0.5rem;
   color: rgb(0, 76, 76);
   font-weight: bold;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
 }
 
 .box p {
@@ -356,7 +360,7 @@ body {
 
 .product_box h5 {
   padding-top: 0.5rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
   word-wrap: break-word;
 }
 
@@ -395,7 +399,7 @@ body {
   justify-content: space-between;
   text-align: center;
   color: white;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
   transition: transform 0.3s ease;
 }
 
@@ -562,7 +566,7 @@ body {
   color: teal;
   text-align: center;
   margin-bottom: 0.7rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
 }
 
 .card {
@@ -577,7 +581,7 @@ body {
 }
 
 .card p {
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
+  font-size: clamp(0.6rem, 0.55rem + 0.3vw, 0.8rem); 
   text-align: left;
   margin-top: 0.5rem;
 }
@@ -598,7 +602,7 @@ body {
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
   cursor: pointer;
 }
 
@@ -614,7 +618,7 @@ body {
 }
 
 #disclaimer p {
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
+  font-size: clamp(0.6rem, 0.55rem + 0.3vw, 0.8rem); 
   color: grey;
   margin: 0.5rem 0;
   line-height: 1.4;
@@ -657,7 +661,7 @@ body {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem);
+  font-size: clamp(0.8rem, 0.7rem + 0.3vw, 1rem);
   width: 100%;
   max-width: 250px;
 }
@@ -672,7 +676,7 @@ body {
   cursor: pointer;
   width: 100%;
   max-width: 250px;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 .book_now:hover {
@@ -698,7 +702,7 @@ body {
 .footer_column h3 {
   color: rgb(0, 169, 157);
   margin-bottom: 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); 
 }
 
 .footer_column ul {
@@ -712,7 +716,7 @@ body {
 .footer_column ul li a {
   text-decoration: none;
   color: black;
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
+  font-size: clamp(0.6rem, 0.55rem + 0.3vw, 0.8rem); 
   display: flex;
   align-items: center;
   gap: 8px;
@@ -727,7 +731,7 @@ body {
   color: white;
   text-align: center;
   padding: 1rem;
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
+  font-size: clamp(0.6rem, 0.55rem + 0.3vw, 0.8rem); 
 }
 
 @media (max-width: 600px) {
@@ -771,7 +775,7 @@ body {
   }
 
   .product_grid_container {
-    grid-template-columns: repeat(2, 1fr); /* Changed from 3 to 2 columns */
+    grid-template-columns: repeat(3, 1fr); 
   }
 
   .three_col_grid {
@@ -817,7 +821,7 @@ body {
   }
 
   .product_grid_container {
-    grid-template-columns: repeat(2, 1fr); /* Changed from 4 to 2 columns */
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
 
@@ -844,6 +848,18 @@ body {
 }
 
 @media (max-width: 767px) {
+
+#product,       
+  #solution,
+  .app,
+  #banking,
+  .tabs,
+  .content_box,
+  #disclaimer,
+  #software,
+  #footer_container {
+    margin: 2rem auto;
+  }
   .menu-toggle {
     display: flex;
   }
@@ -887,9 +903,10 @@ body {
   }
 }
 
+
 @media (max-width: 480px) {
   body {
-    font-size: clamp(0.8125rem, 0.7rem + 0.3vw, 0.875rem); 
+    font-size: clamp(0.8rem, 0.7rem + 0.3vw, 0.8rem); 
   }
   
   .content_left h1 {
