@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  font-size: clamp(0.875rem, 0.5rem + 0.5vw, 1rem); /* 14px-16px */
+  font-size: clamp(0.875rem, 0.5rem + 0.5vw, 1rem); 
 }
 
 #navbar {
@@ -43,7 +43,7 @@ body {
 #navbar h4 {
   color: rgb(0, 169, 157);
   margin-right: 1rem;
-  font-size: clamp(1rem, 0.8rem + 0.5vw, 1.25rem); /* 16px-20px */
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 1.25rem); 
 }
 
 #navbar h4:hover {
@@ -72,7 +72,7 @@ body {
   padding: 0.5rem 1rem;
   color: black;
   font-weight: 500;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); /* 14px-16px */
+  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 .listnode:hover {
@@ -109,6 +109,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem 0;
+  margin: 0 auto;
 }
 
 #left, #right {
@@ -123,12 +124,12 @@ body {
 
 .content_left h1 {
   padding-bottom: 1rem;
-  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); /* 24px-40px */
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); 
   margin-top: 4rem;
 }
 
 .content_left h5 {
-  font-size: clamp(1rem, 0.8rem + 0.5vw, 1.5rem); /* 16px-24px */
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 1.5rem); 
 }
 
 .content_left p {
@@ -159,7 +160,7 @@ body {
 
 .logo_item h2 {
   margin-top: 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1.125rem); 
   color: rgb(0, 0, 128);
 }
 
@@ -213,7 +214,7 @@ body {
   background-color: rgb(0, 76, 76);
   color: white;
   padding: 0 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); /* 14px-16px */
+  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 #download h4:hover,
@@ -222,13 +223,13 @@ body {
   background-color: red;
 }
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .box {
@@ -237,7 +238,7 @@ body {
   border: 1px solid whitesmoke;
   height: auto;
   min-height: 13rem;
-  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); /* 12px-14.4px */
+  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem);
   border-radius: 5%;
   display: flex;
   flex-direction: column;
@@ -261,7 +262,7 @@ body {
   padding: 0.5rem;
   color: rgb(0, 76, 76);
   font-weight: bold;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
 }
 
 .box p {
@@ -275,6 +276,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .erp_box {
@@ -296,7 +299,7 @@ body {
 .erp_box p {
   padding-top: 0.5rem;
   text-align: center;
-  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); /* 12px-14.4px */
+  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); 
 }
 
 .erp_box:hover {
@@ -322,6 +325,7 @@ body {
 #product {
   background: linear-gradient(to bottom, #FBFBFB, #E8F9FF);
   padding: 1rem 0;
+  width: 100%;
 }
 
 .product_grid_container {
@@ -329,27 +333,32 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product_box {
   background-color: white;
   border: 1px solid #ddd;
   text-align: center;
-  margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
   height: auto;
   min-height: 15rem;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .product_box img {
   height: 3rem;
   width: 3rem;
+  max-width: 100%;
 }
 
 .product_box h5 {
   padding-top: 0.5rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
+  word-wrap: break-word;
 }
 
 .product_box p {
@@ -357,6 +366,7 @@ body {
   padding-top: 0.5rem;
   color: grey;
   font-size: inherit;
+  word-wrap: break-word;
 }
 
 #solution {
@@ -369,6 +379,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid_box {
@@ -384,7 +396,7 @@ body {
   justify-content: space-between;
   text-align: center;
   color: white;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
   transition: transform 0.3s ease;
 }
 
@@ -393,7 +405,7 @@ body {
 }
 
 .grid_box h3 {
-  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem); /* 16px-24px */
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem); 
   font-weight: bold;
   margin: 0;
 }
@@ -410,7 +422,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   align-self: center;
-  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); /* 12px-14.4px */
+  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); 
 }
 
 .grid_box button:hover {
@@ -423,6 +435,8 @@ body {
   justify-content: center;
   gap: 1rem;
   margin: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 .applogo {
@@ -445,7 +459,7 @@ body {
 }
 
 .applogo p {
-  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); /* 12px-14.4px */
+  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); 
 }
 
 #banking {
@@ -458,7 +472,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
 .bank {
@@ -512,7 +527,7 @@ body {
   background-color: white;
   border: 1px solid gray;
   color: teal;
-  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); /* 12px-14.4px */
+  font-size: clamp(0.75rem, 0.6rem + 0.3vw, 0.9rem); 
 }
 
 .tab.active {
@@ -549,7 +564,7 @@ body {
   color: teal;
   text-align: center;
   margin-bottom: 0.7rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
 }
 
 .card {
@@ -564,7 +579,7 @@ body {
 }
 
 .card p {
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); /* 11px-13px */
+  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
   text-align: left;
   margin-top: 0.5rem;
 }
@@ -585,7 +600,7 @@ body {
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
   cursor: pointer;
 }
 
@@ -596,10 +611,12 @@ body {
 #disclaimer {
   padding: 1rem;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #disclaimer p {
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); /* 11px-13px */
+  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
   color: grey;
   margin: 0.5rem 0;
   line-height: 1.4;
@@ -621,7 +638,7 @@ body {
 }
 
 #software p {
-  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); /* 20px-28px */
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); 
 }
 
 .form_container {
@@ -642,7 +659,7 @@ body {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); /* 14px-16px */
+  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem);
   width: 100%;
   max-width: 250px;
 }
@@ -657,7 +674,7 @@ body {
   cursor: pointer;
   width: 100%;
   max-width: 250px;
-  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); /* 14px-16px */
+  font-size: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); 
 }
 
 .book_now:hover {
@@ -671,6 +688,8 @@ body {
   padding: 2rem;
   background-color: rgb(255, 255, 255);
   border-top: 1px solid grey;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer_column {
@@ -681,7 +700,7 @@ body {
 .footer_column h3 {
   color: rgb(0, 169, 157);
   margin-bottom: 1rem;
-  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); /* 14px-18px */
+  font-size: clamp(0.875rem, 0.7rem + 0.5vw, 1.125rem); 
 }
 
 .footer_column ul {
@@ -695,7 +714,7 @@ body {
 .footer_column ul li a {
   text-decoration: none;
   color: black;
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); /* 11px-13px */
+  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
   display: flex;
   align-items: center;
   gap: 8px;
@@ -710,7 +729,23 @@ body {
   color: white;
   text-align: center;
   padding: 1rem;
-  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); /* 11px-13px */
+  font-size: clamp(0.6875rem, 0.55rem + 0.3vw, 0.8125rem); 
+}
+
+@media (max-width: 600px) {
+  .product_grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product_box {
+    min-height: 12rem;
+    padding: 0.75rem;
+  }
+  
+  .product_box img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -724,6 +759,7 @@ body {
 
   .content_right {
     padding-left: 2rem;
+    text-align: left;
   }
 
   .grid-container {
@@ -742,22 +778,20 @@ body {
 
   .three_col_grid {
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 4rem;
+    margin: 0 auto;
+    padding: 1rem 4rem;
   }
 
   .bank {
     width: 22%;
   }
+  
   #disclaimer {
     padding: 1rem 2rem;
     text-align: left;
   }
   
   #disclaimer p {
-    margin: 0.2rem auto;
-    max-width: 80%;
-  }
-  #divcontent p {
     margin: 0.2rem auto;
     max-width: 80%;
   }
@@ -838,6 +872,7 @@ body {
 
   .content_right {
     padding: 1rem 0;
+    text-align: center;
   }
 
   .logo_item {
@@ -856,7 +891,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    font-size: clamp(0.8125rem, 0.7rem + 0.3vw, 0.875rem); /* 13px-14px */
+    font-size: clamp(0.8125rem, 0.7rem + 0.3vw, 0.875rem); 
   }
   
   .content_left h1 {
@@ -868,7 +903,7 @@ body {
   }
 
   .product_box {
-    margin: 1rem 0.5rem;
+    margin: 0.5rem;
   }
 
   .footer_column {
