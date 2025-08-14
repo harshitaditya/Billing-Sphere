@@ -83,20 +83,19 @@ body {
 
 #image-container {
   width: 100%;
-  height: auto;
   min-height: 80vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .bg-image {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url('https://gstn.org.in/assets/mainDashboard/img/gst-header.jpg');
-  background-size: cover;
+  background: url('https://gstn.org.in/assets/mainDashboard/img/gst-header.jpg') center/cover no-repeat;
   opacity: 0.3;
   z-index: 1;
 }
@@ -104,11 +103,11 @@ body {
 .content_wrapper {
   position: relative;
   z-index: 2;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   margin: 0 auto;
 }
 
@@ -434,9 +433,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 2rem;
-  max-width: 1200px;
   margin: 2rem auto;
+  max-width: 1200px;
 }
 
 .applogo {
@@ -764,22 +762,22 @@ body {
 
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem 4rem;
+    padding: 1rem;
   }
 
   .erp_grid_container {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 4rem;
+    padding: 1rem;
   }
 
   .product_grid_container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Changed from 3 to 2 columns */
   }
 
   .three_col_grid {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: 1rem;
   }
 
   .bank {
@@ -787,13 +785,13 @@ body {
   }
   
   #disclaimer {
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-align: left;
   }
   
   #disclaimer p {
     margin: 0.2rem auto;
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 
@@ -819,7 +817,7 @@ body {
   }
 
   .product_grid_container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Changed from 4 to 2 columns */
   }
 }
 
