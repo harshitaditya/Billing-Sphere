@@ -848,18 +848,6 @@ body {
 }
 
 @media (max-width: 767px) {
-
-#product,       
-  #solution,
-  .app,
-  #banking,
-  .tabs,
-  .content_box,
-  #disclaimer,
-  #software,
-  #footer_container {
-    margin: 2rem auto;
-  }
   .menu-toggle {
     display: flex;
   }
